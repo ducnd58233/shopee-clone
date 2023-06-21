@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path')
 
 module.exports = {
   extends: [
     'eslint:recommended',
+    'plugin:react/jsx-runtime',
     'plugin:react/recommended',
     'plugin:import/recommended',
     'plugin:jsx-a11y/recommended',
@@ -26,6 +28,7 @@ module.exports = {
     node: true
   },
   rules: {
+    'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-no-target-blank': 'warn',
     'prettier/prettier': [
