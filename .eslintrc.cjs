@@ -28,6 +28,7 @@ module.exports = {
     node: true
   },
   rules: {
+    'no-control-regex': 0,
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
     'react/jsx-no-target-blank': 'warn',
